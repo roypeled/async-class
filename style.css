@@ -1,0 +1,26 @@
+body {
+    background: #62a9fd;
+    font-family: sans-serif;
+}
+
+#user-container {
+    position: absolute;
+    color: white;
+    left: 10px;
+    top: 10px;
+
+    background-color: #6e71b1;
+    padding: 10px;
+    width: 330px;
+}
+
+#posts-container {
+    margin-left: 350px;
+}
+
+#posts-container li {
+    list-style: none;
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+}

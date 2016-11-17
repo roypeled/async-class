@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="async.js"></script>
+
+    <script type="text/x-handlebars-template" id="userTpl">
+        <div>
+            <h1>{{name}}</h1>
+            <h2>{{email}}</h2>
+            <ul>
+                <li>Address: {{address.street}}</li>
+                <li>City: {{address.city}}</li>
+                <li>Phone: {{phone}}</li>
+                <li>Website: {{website}}</li>
+                <li>Company: {{company.name}}</li>
+            </ul>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="postsTpl">
+        <ul>
+            {{#each this}}
+            <li>
+                <h3>{{title}}</h3>
+                <p>{{body}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="user-container"></div>
+    <div id="posts-container"></div>
+
+</body>
+</html>
